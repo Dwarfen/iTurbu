@@ -836,13 +836,13 @@ h3 {
         width: 45.5%;
         vertical-align: top;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1000px) {
             display: block;
             width: 100%;
         }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         padding-bottom: 15px;
     }
 }
@@ -859,7 +859,7 @@ h3 {
     width: 54%;
     height: 28.529em;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         display: block;
         width: 100%;
     }
@@ -883,10 +883,10 @@ h3 {
 
 .contact__form {
     display: block;
-    max-width: 400px;
+    max-width: 450px;
     margin-left: 100px;
     margin-right: auto;
-    padding-top: 4em;
+    padding-top: 2em;
     vertical-align: top;
     text-align: center;
 
@@ -894,7 +894,7 @@ h3 {
         margin-left: auto;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         max-width: 550px;
     }
 }
@@ -907,7 +907,7 @@ h3 {
 
 .contact__subtitle {
     margin-top: .56em;
-    margin-bottom: 3.333em;
+    margin-bottom: 1.333em;
     font-size: 1.06em;
     line-height: 1.444em;
     font-weight: 300
@@ -938,15 +938,34 @@ h3 {
 
 .input {
     display: inline-block;
-    width: 16.67em;
+    width: 220px;
     height: 2.78em;
-    margin-bottom: 1.111em;
+    margin-bottom: .4em;
     padding: 0 1.111em;
     border: 1px solid rgba(81,220,195,.15);
     border-radius: 5px;
     background: #fff;
-    font-family: ProximaNova;
-    font-size: 1.06em
+    font-family: 'ProximaNova';
+    font-size: 1.06em;
+    box-sizing: border-box;
+
+    &_email {
+        width: 445px;
+    }
+
+    &_message {
+        width: 445px;
+        height: 100px;
+        padding-top: 10px;
+        resize: none;
+    }
+
+    @media (max-width: 500px) {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .input:focus {
