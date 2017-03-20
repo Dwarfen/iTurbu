@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="42px" viewBox="0 0 87 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Subcategory" transform="translate(-399.000000, -1590.000000)" fill="#51DCC3">
+            <g id="Testimonial" transform="translate(135.000000, 1590.000000)">
+                <path d="M264.8,41.6 L275.4,0.4 L305.4,0.4 L283,41.6 L264.8,41.6 Z M310.4,41.6 L321,0.4 L351,0.4 L328.6,41.6 L310.4,41.6 Z" id="quote"></path>
+            </g>
+        </g>
+    </g>
+</svg>
