@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="assets/css/jquery.modal.min.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/styles.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -46,10 +47,10 @@
 						<li class="nav__list_item"><a class="nav__list_link" href="index.html">Home</a></li>
 						<li class="nav__list_item"><a class="nav__list_link" href="#about">About us</a></li>
 						<li class="nav__list_item"><a class="nav__list_link" href="#features">Services</a></li>
-						<li class="nav__list_item"><a class="nav__list_link" href="#services">Industries</a>
+						<li class="nav__list_item current-menu-item"><a class="nav__list_link" href="#services">Industries</a>
 							<div class="header__subPanel">
 								<ul class="header__subPanel_nav">
-									<li class="header__subPanel_nav_item"><a href="" class="header__subPanel_nav_link">
+									<li class="header__subPanel_nav_item current-menu-ancestor"><a href="" class="header__subPanel_nav_link">
 										<svg class='sprite'>
 											<use class='icon cloud' xlink:href="#cloud" x="0" y="0"/>
 										</svg>
@@ -87,11 +88,73 @@
 				</nav>
 			<div class="mobileMenu__panel">
 				<nav class="mobileMenu__nav">
-					<a class="mobileMenu__nav_item" href="">Home</a>
-					<a class="mobileMenu__nav_item" href="">About us</a>
-					<a class="mobileMenu__nav_item" href="">Features</a>
-					<a class="mobileMenu__nav_item" href="">Services</a>
-					<a class="mobileMenu__nav_item" href="">Contacts</a>
+					<ul class="mobileMenu__nav_list">
+						<li class="mobileMenu__nav_item">
+							<a class="mobileMenu__nav_link" href="#">Home</a>
+						</li>
+						<li class="mobileMenu__nav_item">
+							<a class="mobileMenu__nav_link" href="#">About us</a>
+						</li>
+						<li class="mobileMenu__nav_item">
+							<a class="mobileMenu__nav_link" href="#">Features</a>
+						</li>
+						<li class="mobileMenu__nav_item mobileMenu__nav_item_open">
+							<span class="mobileNavOpen">Services</span>
+							<ul class="mobileMenu__nav_subMenu">
+								<li class="mobileMenu__nav_subMenu_item">
+									<a href="#" class="mobileMenu__nav_subMenu_link">
+										<svg class='sprite' viewBox="0 -7 50 50">
+											<use class='icon cloud' xlink:href="#cloud" x="0" y="0"/>
+										</svg>
+										Cloud Services
+									</a>
+								</li>
+								<li class="mobileMenu__nav_subMenu_item">
+									<a href="#" class="mobileMenu__nav_subMenu_link">
+										<svg class='sprite' viewBox="0 0 45 30">
+											<use class='icon network' xlink:href="#network" x="0" y="0"/>
+										</svg>
+										Network Services
+									</a>
+								</li>
+								<li class="mobileMenu__nav_subMenu_item">
+									<a href="#" class="mobileMenu__nav_subMenu_link">
+										<svg class='sprite' viewBox="0 -3 35 47">
+											<use class='icon testing' xlink:href="#testing" x="0" y="0"/>
+										</svg>
+										Testing Services 
+									</a>
+								</li>
+								<li class="mobileMenu__nav_subMenu_item">
+									<a href="#" class="mobileMenu__nav_subMenu_link">
+										<svg class='sprite' viewBox="0 -3 40 45">
+											<use class='icon security' xlink:href="#secure" x="0" y="0"/>
+										</svg>
+										Security Services
+									</a>
+								</li>
+								<li class="mobileMenu__nav_subMenu_item">
+									<a href="#" class="mobileMenu__nav_subMenu_link">
+										<svg class='sprite' viewBox="0 -3 40 45">
+											<use class='icon migration' xlink:href="#migration" x="0" y="0"/>
+										</svg>
+										Migration Services
+									</a>
+								</li>
+								<li class="mobileMenu__nav_subMenu_item">
+									<a href="#" class="mobileMenu__nav_subMenu_link">
+										<svg class='sprite' viewBox="0 -3 40 45">
+											<use class='icon other' xlink:href="#other" x="0" y="0"/>
+										</svg>
+										Other Services
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobileMenu__nav_item">
+							<a class="mobileMenu__nav_link" href="#">Contacts</a>
+						</li>
+					</ul>
 				</nav>
 			</div>
 			</div>
@@ -228,6 +291,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="features__dots"></div>
 
 		</div>
 	</section>
@@ -252,6 +316,7 @@
 						<div class="services__item" onclick="changeServiceView('menu', 'network_optimization')"><img src="assets/img/ico-network.svg" alt=""> Network Optimization </div>
 						<div class="services__item" onclick="changeServiceView('menu', 'application_integration')"><img src="assets/img/ico-app_integration.svg" alt=""> Application Integration </div>
 					</div>
+					<div class="services__dots"></div>
 				</div>
 
 				<div class="article_modal_preview" id="design_and_planning" style="display: none;">
@@ -457,6 +522,7 @@
 	 <script src="assets/js/jquery-3.1.1.min.js"></script>
 	 <script src="assets/js/typed.js"></script>
 	 <script src="assets/js/jquery.modal.min.js"></script>
+	 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 	 <script src="assets/js/index.js"></script>
 </body>
 </html>

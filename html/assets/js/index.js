@@ -110,4 +110,51 @@ $(document).ready(function() {
 
     });
 
+    initSlick();
+
+    $(window).resize(function(){
+        initSlick();
+    });
+
+    function initSlick() {
+
+         if($(window).width() < 720) {
+          $('.features__list').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+            appendDots: '.features__dots'
+          });
+          $('.services__list').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+            appendDots: '.services__dots'
+          });
+          } else {
+            $('.features__list').slick('unslick');
+            $('.services__list').slick('unslick');
+          }
+
+
+    }
+
+
+    var mobileNavOpen = $('.mobileNavOpen');
+    var mobileNavItem = $('.mobileMenu__nav_item_open');
+    var mobileNavSubMenu = $('.mobileMenu__nav_subMenu');
+
+    mobileNavOpen.click(function(e) {
+
+        e.stopPropagation();
+
+        mobileNavItem.toggleClass('mobileMenu__nav_item_current');
+        mobileNavSubMenu.toggleClass('current');
+
+
+    })
+
 });
+
