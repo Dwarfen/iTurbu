@@ -11,10 +11,18 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
-	<header class="header header_services">
+	<header class="header">
 		<div class="header__panel">
 			<div class="wrapper">
 				<div class="logo header__logo"><img src="assets/img/logo.png" alt=""></div>
+				<input id="toggle" type="checkbox">
+				<label class="toggle_container" for="toggle">
+				<div class="mobileMenu">
+					<div class="mobileMenu__layer mobileMenu__layer_1"></div>
+					<div class="mobileMenu__layer mobileMenu__layer_2"></div>
+					<div class="mobileMenu__layer mobileMenu__layer_3"></div>
+				</div>
+				</label>
 				<nav class="nav header__nav">
 					<ul class="nav__list">
 						<li class="nav__list_item"><a class="nav__list_link" href="index.html">Home</a></li>
@@ -59,10 +67,23 @@
 						<li class="nav__list_item"><a class="nav__list_link" href="#contacts">Contacts</a></li>
 					</ul>
 				</nav>
+			<div class="mobileMenu__panel">
+				<nav class="mobileMenu__nav">
+					<a class="mobileMenu__nav_item" href="">Home</a>
+					<a class="mobileMenu__nav_item" href="">About us</a>
+					<a class="mobileMenu__nav_item" href="">Features</a>
+					<a class="mobileMenu__nav_item" href="">Services</a>
+					<a class="mobileMenu__nav_item" href="">Contacts</a>
+				</nav>
+			</div>
 			</div>
 		</div>
-		<strong class="header__title">Network Services</strong>
-		<div class="header__subtitle header__subtitle_services">One of the crucial parts of successful network running is testing.</div>
+		<div class="wrapper wrapper_header">
+			<strong class="header__title">We make <span>IT work for you</span></strong>
+			<div class="header__subtitle">We offer broad range of IT services and <span>solutions in technical strategy planning,</span> system and network maintenance and consulting, technology implementation and operations.</div>
+
+			<a href="#contacts" class="button header__button">Contact us</a>
+		</div>
 	</header>
 
 	<section class="section subHeader">
@@ -231,6 +252,13 @@
 				<img src="assets/img/footer-logo.svg" alt="">
 				<div class="footer__copyrights">IT CLOUD TECH SOLUTIONS &copy; 2016.</div>
 			</div>
+
+			<div class="logo footer__logo_mobile">
+				<img src="assets/img/footer-logo.svg" alt="">
+			</div>
+
+			<div class="footer__phone_top">(646) 783-9883</div>
+			<div class="footer__logo_subline"></div>
 			
 			<div class="footer__services">
 				<ul>
@@ -283,6 +311,17 @@
 					<li><a href="#" class="footer__services_item">Open Source Software</a></li>
 				</ul>
 			</div>
+
+			<div class="footer__services_mobile">
+				<ul class="footer__services_mobile_list">
+					<li class="footer__services_mobile_item"><a href="" class="footer__services_mobile_link">Cloud Services</a></li>
+					<li class="footer__services_mobile_item"><a href="" class="footer__services_mobile_link">Network Services</a></li>
+					<li class="footer__services_mobile_item"><a href="" class="footer__services_mobile_link">Security Services</a></li>
+					<li class="footer__services_mobile_item"><a href="" class="footer__services_mobile_link">Migration Services</a></li>
+					<li class="footer__services_mobile_item"><a href="" class="footer__services_mobile_link">Testing Services</a></li>
+					<li class="footer__services_mobile_item"><a href="" class="footer__services_mobile_link">Other Services</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	<div class="footer__panel">
@@ -296,6 +335,8 @@
 					<li class="footer__menu_item"><a class="footer__menu_link" href="#">Cookie Policy</a></li>
 				</ul>
 			</div>
+			<div class="footer__panel_subline"></div>
+			<div class="footer__copyright">© 2016 IT CLOUD.</div>
 			<div class="footer__phone">(646) 783-9883</div>
 			<a href="" class="footer__designed">Designed by <img src="assets/img/difiz_logo.svg" alt=""></a>
 		</div>
